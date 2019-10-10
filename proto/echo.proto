@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package gorpc;
 
+option go_package = "gorpc/proto";
+
 message EchoRequest {
   string msg = 1;
 }
