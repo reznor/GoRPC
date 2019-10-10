@@ -1,1 +1,4 @@
-protoc --go_out=paths=source_relative,plugins=grpc:. proto/echo.proto
+TOP=../../
+cd ${TOP}
+
+protoc --go_out=plugins=grpc:. gorpc/proto/echo.proto
